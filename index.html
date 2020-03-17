@@ -1,0 +1,21 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CraPNG.JS</title>
+	</head>
+	<body>
+		<crapng data-src="./feel.jpg"></crapng>
+		<script src="./index.js"></script>
+		<script>
+			(() => {
+				window.onload = () => {
+					const crapngs = document.querySelectorAll("crapng");
+					for (let i = 0; i < crapngs.length; i++) {
+						CraPNG.render(crapngs[i]);
+					}
+				};
+			})();
+		</script>
+	</body>
+</html>
